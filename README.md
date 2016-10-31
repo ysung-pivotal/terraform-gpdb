@@ -9,6 +9,8 @@ TODOs
  - gpdb install
  - gpdb init
  - madlib/plr/pdltools/postgis
+ - mirror
+ - standby master
  - gphdfs
  - s3/gcs
  - disks
