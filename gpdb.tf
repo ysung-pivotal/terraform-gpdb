@@ -32,7 +32,7 @@ resource "google_compute_subnetwork" "cluster-net" {
 	region = "${var.gcp_region}"
 }
 
-#Servers
+#Servers - master
 resource "google_compute_instance" "master" {
 	name = "${var.cluster_name}-master"
 	machine_type = "${var.master_machine_type}"
@@ -80,6 +80,7 @@ resource "google_compute_instance" "master" {
 	}	
 }
 
+#servers - segments
 resource "google_compute_instance" "gpdb-segments" {
 	count = "${var.gpdb_segment_size}"
 	name = "${var.cluster_name}-segment-${count.index + 1}"
