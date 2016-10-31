@@ -1,0 +1,7 @@
+gcp_project = "pde-ysung"
+gcp_credentials_path = "/Users/ysung/Documents/PDE-ysung-ddd8344c5e3a.json"
+gce_ssh_user = "root"
+gcp_publickey_path = "/Users/ysung/.ssh/gcp_id_rsa.pub"
+gcp_privatekey_path = "/Users/ysung/.ssh/gcp_id_rsa"
+pivotal_token = "RDsUwK55acJmPsWMoyDJ"
+dpod_dir = "/tmp/dpod-gpdb"
